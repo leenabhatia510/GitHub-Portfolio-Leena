@@ -1,13 +1,118 @@
-:root{--maxw:900px;--accent:#0b66c3}
-*{box-sizing:border-box}body{font-family:Inter,system-ui,Arial;margin:0;color:#111}
-.container{max-width:var(--maxw);margin:0 auto;padding:24px}
-.hero{background:#f6fbff;padding:48px 0;text-align:center}
-.hero h1{margin:0;font-size:2.2rem}
-.subtitle{margin:8px 0 16px;color:#333}
-.links a{margin:0 8px;text-decoration:none;color:var(--accent)}
-h2{border-bottom:1px solid #eee;padding-bottom:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;list-style:none;padding:0}
-.project{margin:18px 0;padding:12px;border-radius:8px;border:1px solid #eee}
-.job{margin-bottom:12px}
-footer{padding:12px;text-align:center;color:#777}
-@media (max-width:600px){.hero{padding:32px}.container{padding:16px}}
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+.section {
+  max-width: 950px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #0b66c3;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 14px;
+  background: #0b66c3;
+  color: white !important;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #094f96;
+}
+
+.btn.large {
+  padding: 15px 26px;
+  font-size: 18px;
+}
+
+.btn.small {
+  padding: 6px 10px;
+}
+
+/* HERO */
+.hero-section {
+  padding: 120px 20px;
+  text-align: center;
+  background: #f4f9ff;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+  color: #0b66c3;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.skills-grid span {
+  background: #eef5ff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* PROJECTS */
+.project-card {
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* EXPERIENCE */
+.exp-block {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+footer {
+  background: #fafafa;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
