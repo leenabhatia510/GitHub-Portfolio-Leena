@@ -3,82 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Leena Bhatia — Data Analyst</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Leena Bhatia - Data Analyst. SQL, Python, Power BI. Projects: Retail ETL, Customer Sales Dashboard, etc." />
+  <title>Leena Bhatia — Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Leena Bhatia</h1>
-      <p class="subtitle">Data Analyst — SQL · Python · Power BI · ETL</p>
-      <nav class="links">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a href="LeenaBhatia_DataAnalytics_Resume.pdf" download>Download Resume</a>
-      </nav>
-    </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2 class="logo">Leena Bhatia</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="LeenaBhatia_DataAnalytics_Resume.pdf" download>Resume</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>Detail-oriented Data Analyst experienced in building ETL pipelines, dashboards, and automations. Skilled in Python (pandas), SQL, Power BI, and Excel. (Shorten from resume.)</p>
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <h1>Hi, I'm <span>Leena Bhatia</span></h1>
+    <p class="hero-sub">Data Analyst | SQL • Python • Power BI • ETL Pipelines</p>
+    <a class="btn large" href="#projects">View My Work</a>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Detail-oriented Data Analyst with strong experience in data operations, ETL pipelines,
+        SQL development, and reporting automation. Skilled in Python, Power BI, and handling large datasets.
+      </p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="grid">
-        <li>Python (pandas, NumPy)</li>
-        <li>SQL — MySQL, SQL Server</li>
-        <li>Power BI, DAX</li>
-        <li>Data Cleaning & ETL</li>
-        <li>Advanced Excel</li>
-        <li>Git & GitHub</li>
-      </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <span>Python (pandas, NumPy)</span>
+        <span>SQL — MySQL, SQL Server</span>
+        <span>Power BI • DAX</span>
+        <span>Data Cleaning & ETL</span>
+        <span>Excel • Pivot Tables</span>
+        <span>Git & GitHub</span>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
-      <article class="project">
-        <h3>Retail Sales & Inventory Data Conversion Pipeline</h3>
-        <p><strong>Stack:</strong> SQL Server, Python, Power BI</p>
-        <p>Built an ETL pipeline to standardize product codes, consolidate duplicates, and implement validation checks. Deployed Power BI dashboards for sales and inventory monitoring.</p>
-        <p><a href="projects/retail.html">Read case study →</a> • <a href="https://github.com/yourusername/retail-pipeline">Code</a></p>
-      </article>
+      <div class="project-card">
+        <h3>Retail Sales & Inventory ETL Pipeline</h3>
+        <p>
+          Built SQL + Python pipeline to clean, standardize, and validate product-level data.
+          Automated dashboards for sales & inventory monitoring.
+        </p>
+        <a class="btn small" href="projects/retail-etl.html">View Project</a>
+      </div>
 
-      <article class="project">
+      <div class="project-card">
         <h3>Customer Sales Insights Dashboard</h3>
-        <p><strong>Stack:</strong> Python (pandas), SQL, Power BI</p>
-        <p>Analyzed purchase history to identify top-selling products, segment customers, and visualize retention trends.</p>
-        <p><a href="projects/customer-sales.html">Read case study →</a> • <a href="https://github.com/yourusername/customer-sales">Code</a></p>
-      </article>
+        <p>
+          Analyzed customer behavior, segmented buyers, and built Power BI dashboards to track retention and trends.
+        </p>
+        <a class="btn small" href="projects/customer-sales.html">View Project</a>
+      </div>
 
+      <div class="project-card">
+        <h3>Healthcare Commercial Analytics Dashboard</h3>
+        <p>
+          Created HCP-level sales dashboards, segmentation insights, and targeting metrics using SQL + Power BI.
+        </p>
+        <a class="btn small" href="projects/healthcare-dashboard.html">View Project</a>
+      </div>
     </section>
 
-    <section id="experience">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
       <h2>Experience</h2>
-      <div class="job">
-        <h4>Data Analyst (Freelancer) — Soul AI</h4>
-        <p>Developed automated ETL workflows (Python, SQL) and Power BI dashboards, improving data usability and reporting accuracy. :contentReference[oaicite:1]{index=1}</p>
+      <div class="exp-block">
+        <h3>Data Analyst — Soul AI</h3>
+        <p>Built ETL workflows, automated reports, and improved data accuracy through validation checks.</p>
       </div>
-      <div class="job">
-        <h4>Data Analyst — TaskLance</h4>
-        <p>Processed unstructured records, migrated to SQL, and created dashboards for revenue & KPI tracking. :contentReference[oaicite:2]{index=2}</p>
+      <div class="exp-block">
+        <h3>Data Analyst — TaskLance</h3>
+        <p>Transformed unstructured datasets, implemented SQL-based data models, and built KPI dashboards.</p>
       </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="section">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:leenabhatia510@gmail.com">leenabhatia510@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/leenabhatia510">github.com/leenabhatia510</a> • LinkedIn: <a href="https://www.linkedin.com/in/leena-bhatia-964a1a211/">linkedin.com/in/leena-bhatia-964a1a211</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/leena-bhatia-964a1a211" target="_blank">linkedin.com/in/leena-bhatia</a></p>
+      <p>GitHub: <a href="https://github.com/leenabhatia510" target="_blank">github.com/leenabhatia510</a></p>
     </section>
+
   </main>
 
   <footer>
-    <p>Made with ❤️ — Leena Bhatia</p>
+    <p>© 2025 Leena Bhatia | Data Analyst Portfolio</p>
   </footer>
+
 </body>
 </html>
