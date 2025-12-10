@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HR Data Analytics | Leena Bhatia</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    .project-page {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .back-link {
+      color: #0b66c3;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    .section-block {
+      margin-bottom: 30px;
+    }
+    .code-box {
+      background: #f5f5f5;
+      padding: 12px;
+      border-left: 4px solid #0b66c3;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+    .dashboard-img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="project-page">
+
+    <a href="../index.html#projects" class="back-link">← Back to Portfolio</a>
+
+    <h1>HR Data Analytics Dashboard</h1>
+    <p><strong>Tools:</strong> SQL • Power BI • Excel • DAX</p>
+    <p><strong>Role:</strong> Data Analyst</p>
+
+    <!-- DASHBOARD IMAGE -->
+    <img src="../images/hr-analytics.jpg" alt="HR Dashboard Screenshot" class="dashboard-img" />
+
+    <!-- OVERVIEW -->
+    <div class="section-block">
+      <h2>📌 Project Overview</h2>
+      <p>
+        Developed an HR Analytics Dashboard to help HR teams track employee headcount, salary distribution,
+        attrition patterns, qualifications, and workforce trends. The dashboard centralizes all employee
+        information and enables leadership to make data-driven workforce decisions.
+      </p>
+    </div>
+
+    <!-- BUSINESS PROBLEM -->
+    <div class="section-block">
+      <h2>📂 Business Problem</h2>
+      <p>The HR department lacked visibility into:</p>
+      <ul>
+        <li>Workforce demographics (age, gender, job title)</li>
+        <li>Salary distribution by qualification and role</li>
+        <li>Headcount trends over time</li>
+        <li>Leave balance and employee availability</li>
+      </ul>
+      <p>The goal was to create a unified dashboard for monitoring employee metrics.</p>
+    </div>
+
+    <!-- RESPONSIBILITIES -->
+    <div class="section-block">
+      <h2>⚙️ My Responsibilities</h2>
+      <ul>
+        <li>Cleaned and standardized HR dataset (age, salary, join dates, job titles)</li>
+        <li>Created DAX measures for KPIs such as Headcount, Avg Salary, Avg Leave Balance</li>
+        <li>Designed age-bin distributions and employee segmentation visuals</li>
+        <li>Built trend charts for cumulative headcount growth</li>
+        <li>Developed interactive Power BI dashboards with slicers & filters</li>
+      </ul>
+    </div>
+
+    <!-- ANALYTICAL APPROACH -->
+    <div class="section-block">
+      <h2>🔧 Analytical Approach</h2>
+
+      <h3>1. Data Cleaning (Excel / Power Query)</h3>
+      <div class="code-box">
+        - Removed null values in Age, Salary, Join Date<br>
+        - Standardized Job Title categories<br>
+        - Created Age Bins (20-30, 30-40, etc.)<br>
+        - Converted text dates to proper date format
+      </div>
+
+      <h3>2. DAX Measures for KPIs</h3>
+      <div class="code-box">
+        Headcount = COUNT(Employee[EmployeeID])<br><br>
+        Avg Salary = AVERAGE(Employee[Salary])<br><br>
+        Avg Leave Balance = AVERAGE(Employee[LeaveBalance])<br><br>
+        LBL over 20 = CALCULATE(COUNT(Employee[EmployeeID]), Employee[LeaveBalance] > 20)
+      </div>
+
+      <h3>3. Trend Analysis</h3>
+      <div class="code-box">
+        Cumulative Headcount = CALCULATE(
+        COUNT(Employee[EmployeeID]),
+        FILTER(ALL(Employee), Employee[JoinDate] <= MAX(Employee[JoinDate]))
+        )
+      </div>
+    </div>
+
+    <!-- INSIGHTS -->
+    <div class="section-block">
+      <h2>📊 Key Insights</h2>
+      <ul>
+        <li>Total headcount: 161 employees</li>
+        <li>Avg salary: $54K across all job titles</li>
+        <li>Majority of employees fall within the 25–40 age range</li>
+        <li>Gender distribution is balanced across the organization</li>
+        <li>Steady headcount growth after 2019 shown in cumulative trend</li>
+        <li>Qualifications strongly correlate with salary bands</li>
+      </ul>
+    </div>
+
+    <!-- IMPACT -->
+    <div class="section-block">
+      <h2>🏆 Business Impact</h2>
+      <ul>
+        <li>Improved visibility into workforce structure and demographics</li>
+        <li>Enabled HR to plan hiring based on headcount and qualification gaps</li>
+        <li>Identified roles with salary imbalance for compensation review</li>
+        <li>Streamlined monthly reporting with an interactive dashboard</li>
+      </ul>
+    </div>
+
+    <!-- LINKS -->
+    <div class="section-block">
+      <h2>🔗 Links</h2>
+      <p>
+        <a href="YOUR_GITHUB_LINK">GitHub Repo</a><br>
+        <a href="YOUR_POWER_BI_LINK">Power BI Dashboard</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
