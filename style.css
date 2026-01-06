@@ -1,16 +1,17 @@
 /* ===========================
    GLOBAL THEME SETTINGS
+   (Grey & Blue Theme)
    =========================== */
 
 :root {
-  --bg-light: #f7f7f8;
-  --bg-card: #ffffffc9;
-  --text-dark: #2d2d2d;
-  --text-grey: #555;
-  --pink: #ff4f9a;
-  --pink-dark: #d63f80;
-  --grey: #e4e4e7;
-  --shadow-3d: 8px 8px 20px rgba(0,0,0,0.15);
+  --bg-light: #f4f6f8;
+  --bg-card: #ffffffcc;
+  --text-dark: #1e1e2f;
+  --text-grey: #4a4a5a;
+  --blue: #3b82f6;
+  --blue-dark: #1e40af;
+  --grey: #d1d5db;
+  --shadow-3d: 8px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -40,10 +41,10 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   padding: 15px 30px;
   border-bottom: 1px solid var(--grey);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -57,27 +58,27 @@ h1, h2, h3 {
 }
 
 .navbar nav a:hover {
-  color: var(--pink);
+  color: var(--blue);
   transform: translateY(-2px);
 }
 
 /* ===========================
-   BUTTONS (3D PINK STYLE)
+   BUTTONS (3D BLUE STYLE)
    =========================== */
 
 .btn {
   padding: 10px 18px;
-  background: var(--pink);
+  background: var(--blue);
   color: white !important;
   border-radius: 10px;
   font-weight: bold;
-  box-shadow: 0 6px 0 var(--pink-dark);
+  box-shadow: 0 6px 0 var(--blue-dark);
   transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background: var(--pink-dark);
-  box-shadow: 0 3px 0 var(--pink-dark);
+  background: var(--blue-dark);
+  box-shadow: 0 3px 0 var(--blue-dark);
   transform: translateY(3px);
 }
 
@@ -93,18 +94,18 @@ h1, h2, h3 {
 .hero-section {
   padding: 130px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #fdf2f8 0%, #e4e4e7 100%);
+  background: linear-gradient(135deg, #e0f2fe 0%, #d1d5db 100%);
   color: var(--text-dark);
 }
 
 .hero-section h1 {
   font-size: 50px;
   font-weight: 700;
-  text-shadow: 4px 4px 0 #fff, 6px 6px 20px rgba(0,0,0,0.1);
+  text-shadow: 4px 4px 0 #fff, 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section span {
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .hero-sub {
@@ -129,13 +130,13 @@ h1, h2, h3 {
   text-align: center;
   border-radius: 12px;
   box-shadow: var(--shadow-3d);
-  border: 1px solid #ddd;
+  border: 1px solid #cbd5e1;
   transition: 0.3s;
 }
 
 .skills-grid span:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* ===========================
@@ -154,7 +155,7 @@ h1, h2, h3 {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 12px 12px 28px rgba(0,0,0,0.2);
+  box-shadow: 12px 12px 28px rgba(0, 0, 0, 0.2);
 }
 
 /* ===========================
@@ -186,8 +187,8 @@ h1, h2, h3 {
 footer {
   text-align: center;
   padding: 30px;
-  background: #e4e4e7;
-  color: #333;
+  background: #d1d5db;
+  color: #1e1e2f;
   margin-top: 40px;
   font-weight: 500;
 }
