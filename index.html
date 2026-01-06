@@ -1,115 +1,219 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leena Bhatia | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d04a4e6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Business and Data Analyst with 1+ year of experience in reporting automation, KPI dashboards, and process improvement.
-      Strong expertise in SQL, Power BI, and Python, with hands-on experience in ETL, data validation, and reconciliation.
-      Passionate about leveraging analytics to uncover insights, improve performance, and support business strategy.
-    </p>
-  </section>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Leena Bhatia</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="Leena_Bhatia_Business_Analyst_Resume.pdf" download>Resume</a>
+    </nav>
+  </header>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div><i class="fab fa-python"></i> Python (pandas, NumPy)</div>
-      <div><i class="fas fa-database"></i> SQL (MySQL, SQL Server)</div>
-      <div><i class="fas fa-chart-line"></i> Power BI • DAX • Power Query</div>
-      <div><i class="fas fa-chart-pie"></i> Tableau & Excel (Pivot, XLOOKUP)</div>
-      <div><i class="fas fa-cogs"></i> ETL • Data Validation • Reconciliation</div>
-      <div><i class="fab fa-github"></i> GitHub • AWS • Linux</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Leena Bhatia</span></h1>
+      <h2><span id="typing"></span></h2>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-container">
+  <main>
 
-      <div class="project-card">
-        <h3>Weekly Business Review (WBR) - HR MIS Dashboard</h3>
-        <p>
-          Designed an end-to-end Power BI dashboard tracking headcount, attrition, and salary trends using SQL and Power Query.
-          Cleaned and standardized employee data, enabling drill-downs and executive-level insights for HR decision-making.
-        </p>
-        <a href="https://github.com/leenabhatia510/Portfolio_Projects" target="_blank" class="btn small">View Project</a>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Business and Data Analyst with 1+ year of experience in reporting automation, KPI dashboards, and process improvement.
+        Strong expertise in SQL, Power BI, and Python, with hands-on experience in ETL, data validation, and reconciliation.
+        Passionate about leveraging analytics to uncover insights, improve performance, and support business strategy.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div><i class="fab fa-python"></i> Python (pandas, NumPy)</div>
+        <div><i class="fas fa-database"></i> SQL (MySQL, SQL Server)</div>
+        <div><i class="fas fa-chart-line"></i> Power BI • DAX • Power Query</div>
+        <div><i class="fas fa-chart-pie"></i> Tableau & Excel (Pivot, XLOOKUP)</div>
+        <div><i class="fas fa-cogs"></i> ETL • Data Validation • Reconciliation</div>
+        <div><i class="fab fa-github"></i> GitHub • AWS • Linux</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-container">
+
+        <div class="project-card">
+          <h3>Weekly Business Review (WBR) - HR MIS Dashboard</h3>
+          <p>
+            Designed an end-to-end Power BI dashboard tracking headcount, attrition, and salary trends using SQL and Power Query.
+            Cleaned and standardized employee data, enabling drill-downs and executive-level insights for HR decision-making.
+          </p>
+          <a href="https://github.com/leenabhatia510/Portfolio_Projects" target="_blank" class="btn small">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Credit Card Customer & Transaction Analytics</h3>
+          <p>
+            Built a centralized MIS dashboard combining customer and transaction data using SQL and Power BI.
+            Enabled spend segmentation and reconciliation checks across datasets to ensure 99% accuracy.
+          </p>
+          <a href="https://github.com/leenabhatia510/Credit_Card_DashBoard_PowerBI" target="_blank" class="btn small">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Retail Orders Analytics & Reporting Pipeline</h3>
+          <p>
+            Developed an end-to-end Python + SQL pipeline for data cleaning, validation, and transformation.
+            Generated insights on top-performing products and YoY sales growth for retail analysis.
+          </p>
+          <a href="#" class="btn small">View Project</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="exp-card">
+        <h3>Data Analyst — Soul AI</h3>
+        <span>Jan 2025 – Present | Remote</span>
+        <p>Built automated ETL workflows using Python and SQL to extract and transform multi-source datasets, reducing manual effort by 30%.</p>
+        <p>Implemented data validation and anomaly detection checks to maintain 99% reporting accuracy for operations teams.</p>
       </div>
 
-      <div class="project-card">
-        <h3>Credit Card Customer & Transaction Analytics</h3>
-        <p>
-          Built a centralized MIS dashboard combining customer and transaction data using SQL and Power BI.
-          Enabled spend segmentation and reconciliation checks across datasets to ensure 99% accuracy.
-        </p>
-        <a href="https://github.com/leenabhatia510/Credit_Card_DashBoard_PowerBI" target="_blank" class="btn small">View Project</a>
+      <div class="exp-card">
+        <h3>Data Analyst — TaskLance Analytics</h3>
+        <span>Jul 2024 – Oct 2025 | Mumbai, India</span>
+        <p>Created interactive Power BI dashboards tracking revenue, product performance, and operations KPIs.</p>
+        <p>Maintained daily and monthly MIS reports, standardized 5,000+ unstructured records, and optimized SQL queries for faster reporting.</p>
       </div>
 
-      <div class="project-card">
-        <h3>Retail Orders Analytics & Reporting Pipeline</h3>
-        <p>
-          Developed an end-to-end Python + SQL pipeline for data cleaning, validation, and transformation.
-          Generated insights on top-performing products and YoY sales growth for retail analysis.
-        </p>
-        <a href="#" class="btn small">View Project</a>
+      <div class="exp-card">
+        <h3>Front-End Developer Intern — SigoSoft (Way to Innovation)</h3>
+        <span>Apr 2024 – Jun 2024 | Remote</span>
+        <p>Developed a ReactJS-based healthcare scheduling system integrated with MySQL, managing data for over 100 patients.</p>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="exp-card">
+        <h3>Bachelor of Engineering — Computer Engineering</h3>
+        <span>Thadomal Shahani Engineering College, Mumbai | CGPA: 8.86/10</span>
+        <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Machine Learning, Big Data, OOP, Operating Systems, Computer Networks, DBMS</p>
+      </div>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/7VS61ZB7U5MP" target="_blank">Microsoft Power BI Data Analyst Professional Certificate</a></li>
+        <li><a href="https://www.hackerrank.com/certificates/c37c169e0397" target="_blank">SQL — HackerRank</a></li>
+        <li><a href="https://generateinvoice.teachx.in/generatecertificate/certificate/keertipurswani_db/6643/22628/29" target="_blank">Generative AI — TeachX</a></li>
+        <li>Python — Udemy</li>
+      </ul>
+    </section>
 
-    <div class="exp-card">
-      <h3>Data Analyst — Soul AI</h3>
-      <span>Jan 2025 – Present | Remote</span>
-      <p>Built automated ETL workflows using Python and SQL to extract and transform multi-source datasets, reducing manual effort by 30%.</p>
-      <p>Implemented data validation and anomaly detection checks to maintain 99% reporting accuracy for operations teams.</p>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:leenabhatia510@gmail.com">leenabhatia510@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/leena-bhatia-964a1a211" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/leenabhatia510" target="_blank">GitHub</a></p>
+    </section>
 
-    <div class="exp-card">
-      <h3>Data Analyst — TaskLance Analytics</h3>
-      <span>Jul 2024 – Oct 2025 | Mumbai, India</span>
-      <p>Created interactive Power BI dashboards tracking revenue, product performance, and operations KPIs.</p>
-      <p>Maintained daily and monthly MIS reports, standardized 5,000+ unstructured records, and optimized SQL queries for faster reporting.</p>
-    </div>
+  </main>
 
-    <div class="exp-card">
-      <h3>Front-End Developer Intern — SigoSoft (Way to Innovation)</h3>
-      <span>Apr 2024 – Jun 2024 | Remote</span>
-      <p>Developed a ReactJS-based healthcare scheduling system integrated with MySQL, managing data for over 100 patients.</p>
-    </div>
-  </section>
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="exp-card">
-      <h3>Bachelor of Engineering — Computer Engineering</h3>
-      <span>Thadomal Shahani Engineering College, Mumbai | CGPA: 8.86/10</span>
-      <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Machine Learning, Big Data, OOP, Operating Systems, Computer Networks, DBMS</p>
-    </div>
-  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Leena Bhatia | Data Analyst Portfolio</p>
+  </footer>
 
-  <!-- CERTIFICATES -->
-  <section id="certificates" class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/7VS61ZB7U5MP" target="_blank">Microsoft Power BI Data Analyst Professional Certificate</a></li>
-      <li><a href="https://www.hackerrank.com/certificates/c37c169e0397" target="_blank">SQL — HackerRank</a></li>
-      <li><a href="https://generateinvoice.teachx.in/generatecertificate/certificate/keertipurswani_db/6643/22628/29" target="_blank">Generative AI — TeachX</a></li>
-      <li>Python — Udemy</li>
-    </ul>
-  </section>
+  <!-- Typewriter Script -->
+  <script>
+    const text = ["Data Analyst", "Business Analyst", "Dashboard Developer"];
+    let index = 0, charIndex = 0;
+    const typing = document.getElementById("typing");
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:leenabhatia510@gmail.com">leenabhatia510@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/leena-bhatia-964a1a211" target="_blank">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/leenabhatia510" target="_blank">GitHub</a></p>
-  </section>
+    function type() {
+      if (charIndex < text[index].length) {
+        typing.textContent += text[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 120);
+      } else {
+        setTimeout(erase, 1500);
+      }
+    }
 
-</main>
+    function erase() {
+      if (charIndex > 0) {
+        typing.textContent = text[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 60);
+      } else {
+        index = (index + 1) % text.length;
+        setTimeout(type, 300);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ distance: '50px', duration: 1000, easing: 'ease-out', reset: true });
+    ScrollReveal().reveal('.section h2', { origin: 'top', delay: 100 });
+    ScrollReveal().reveal('.section p, .section ul, .skills-grid div, .project-card, .exp-card', { origin: 'bottom', interval: 150 });
+    ScrollReveal().reveal('.hero-content', { origin: 'bottom', distance: '60px', delay: 200 });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => scrollFunction();
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    }
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
